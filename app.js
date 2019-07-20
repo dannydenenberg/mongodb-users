@@ -12,8 +12,8 @@ const mongodb = require("mongodb"); // load mongodb
 
 const crypto = require("crypto"); // for hashing passwords
 
-// const port = process.env.PORT;
-const port = 4567;
+const port = process.env.PORT;
+// const port = 4567;
 
 const app = express(); // instantiate express
 app.use(require("cors")()); // allow Cross-domain requests
