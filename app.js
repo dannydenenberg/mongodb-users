@@ -6,7 +6,8 @@ const mongodb = require("mongodb"); // load mongodb
 
 const crypto = require("crypto"); // for hashing passwords
 
-const port = 3333;
+// const port = process.env.PORT;
+const port = 4567;
 
 const app = express(); // instantiate express
 app.use(require("cors")()); // allow Cross-domain requests
@@ -23,7 +24,7 @@ mongodb.MongoClient.connect(uri, (err, db) => {
   // sends back the user information if the hashed query parameter for `pass` (password) is the right one for the user
   // sends back object with database information as well as a field called `correctPassword` which is either true or false
   app.get("/:user", (req, res) => {
-    collection.find({ user: req.params.user }).toArray(function(err, docs) {
+    collection.find({ user: req.params.user }).toArray((err, docs) => {
       if (err) {
         res.send("An error occured in getting the user info.");
       } else {
