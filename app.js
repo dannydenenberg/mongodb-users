@@ -1,3 +1,9 @@
+/**
+ * Created by Daniel Denenberg
+ * dannydenenberg@gmail.com
+ * Use of this code is allowed if this comment is not removed.
+ */
+
 require("dotenv").config(); // loads enviornment variables from the .env file
 
 // init project
