@@ -1,6 +1,8 @@
 # mongodb-users
 My backend for some of my MongoDB projects. Feel free to copy and use!
 
+[Link to complete instructions](https://medium.com/swlh/creating-connecting-a-mongodb-database-and-node-js-server-to-a-front-end-6a53d400ae6a)
+
 ## Quick Notes
 
 * All code in [app.js](/app.js)
